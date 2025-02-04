@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bodoni Moda", serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navegacion {
+    display: flex;
+}
+
+.navegacion a {
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.navegacion a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icono {
+    display: none;
+    font-size: 35px;
+    color: wheat;
+    z-index: 103;
+    cursor: pointer;
+}
+
+#menu_toggle {
+    display: none;
+}
+
+.menu-action {
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 8%;
+}
+
+.hero-text h1 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    font-size: 80%;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img {
+    width: 400px;
+    margin: 10% 0 0 10%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.hero-img img:hover {
+    width: 450px;
+    opacity: 0.6;
+}
+
+.iconos {
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+}
+
+.iconos i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.iconos i:hover {
+    color: #31494e;
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    background-color: #21383d;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+    section {
+        padding: 0 3%;
+    }
+
+    .hero-text {
+        padding-top: 0;
+    }
+
+    .hero-img {
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+
+    .iconos, .scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-action {
+        display: block;
+    }
+
+    #menu-icono {
+        display: block;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .navegacion {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #021719ef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all 0.5s ease-out;
+    }
+
+    .navegacion a {
+        margin: 7px 0;
+    }
+
+    #menu_toggle:checked + label.menu-action + .navegacion {
+        right: 0;
+    }
+}
