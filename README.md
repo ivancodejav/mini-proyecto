@@ -1,6 +1,6 @@
-# Mini Proyecto Web
+# 🌐Mini Proyecto Web
 
-Este es un mini proyecto web simple que utiliza HTML, CSS y JavaScript. El objetivo del proyecto es servir como base o ejercicio práctico para el desarrollo frontend.
+Este es un mini proyecto web sencillo que utiliza **HTML**, **CSS** y **JavaScript**. El objetivo del proyecto es hacer una mini presentación sobre mí y demostrar conocimientos básicos de desarrollo web.
 
 ## 🧱 Estructura del proyecto
 mini-proyecto/
