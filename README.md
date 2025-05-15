@@ -2,6 +2,8 @@
 
 Este es un mini proyecto web sencillo que utiliza **HTML**, **CSS** y **JavaScript**. El objetivo del proyecto es hacer una mini presentación sobre mí y demostrar conocimientos básicos de desarrollo web.
 
+puedes verla desde https://ivancodejav.github.io/mini-proyecto/
+
 ## 🧱 Estructura del proyecto
 mini-proyecto/
  <br>index.html # Página principal <br>
