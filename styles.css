@@ -36,7 +36,7 @@ header {
 
 .navegacion a {
   margin-left: 60px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: all 0.5s ease;
@@ -78,19 +78,19 @@ section {
 }
 
 .hero-text h5 {
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 25px;
 }
 
 .hero-text h4 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   margin-top: 10px;
 }
 
 .hero-text p {
-  font-size: 80%;
+  font-size: 20px;
   line-height: 1.9;
   margin-bottom: 40px;
 }
@@ -114,6 +114,8 @@ section {
   transform: translateY(-50%);
 }
 
+
+
 .iconos i {
   display: block;
   margin: 26px 0;
@@ -125,6 +127,104 @@ section {
   color: #31494e;
   transform: translateY(-5px);
 }
+
+
+
+
+
+
+.portafolio {
+  padding: 100px 10%;
+  background-color: #1b1b1b;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+}
+
+.portafolio h2 {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.contenedor-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.proyecto {
+  background: #2c2c2c;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+}
+
+.proyecto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.info h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.info a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.info a:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
 
 .scroll-down {
   position: absolute;
@@ -231,14 +331,7 @@ section {
   line-height: 1.6;
 }
 
-.portafolio {
-  min-height: 100vh;
-  padding: 100px 10%;
-  background-color: #312e2e;
-  display: flex;
-  flex-direction: column;
-  
-}
+
 
 
 .contacto{
@@ -262,3 +355,23 @@ text-align: center;
 }
 
 
+@media (max-width: 992px) {
+  .contenedor-proyectos {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .proyecto {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-proyectos {
+    grid-template-columns: 1fr;
+  }
+
+  .proyecto {
+    max-width: 100%;
+    height: auto;
+  }
+}
