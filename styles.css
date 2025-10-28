@@ -245,6 +245,94 @@ section {
   transform: translateY(-5px);
 }
 
+
+
+
+
+
+
+
+
+.linkedin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #0077b5, #00a0dc);
+  color: white;
+  text-align: center;
+}
+
+.linkedin h2 {
+  font-size: 2.5rem;
+  background-color: rgba(58, 143, 158, 0.9);
+  color: #ffffff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+.linkedin p {
+  font-size: 1.2rem;
+  background-color: white;
+  color: #0077b5;
+  padding: 30px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.linkedin-btn a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  gap: 10px;
+  background-color: white;
+  color: #0077b5;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.linkedin-btn a:hover {
+  background-color: #0077b5;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.linkedin-btn i {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
   section {
     padding: 0 3%;
@@ -373,5 +461,26 @@ text-align: center;
   .proyecto {
     max-width: 100%;
     height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .linkedin {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linkedin-img img {
+    margin-top: 20px;
+    width: 120px;
+  }
+
+  .linkedin h2 {
+    font-size: 1.5rem;
+  }
+
+  .linkedin p {
+    font-size: 1rem;
   }
 }
